@@ -23,6 +23,8 @@ class App extends Component {
   }
 
   clickDetail(eyewear) {
+    window.scrollTo(0, 0);
+
     $('.list-detail').removeClass("selected-border");
     $('.list-title').addClass("reduce-title");
     $(`#detail-${eyewear.id}`).addClass("selected-border");
